@@ -26,7 +26,7 @@ module.exports = function(content) {
 	Object.keys(query).forEach(function(attr) {
 		config[attr] = query[attr];
 	});
-	console.log(this.resourcePath)
+
 	var url = loaderUtils.interpolateName(this, config.name, {
 		context: config.context || this.options.context,
 		content: config.usePath ? this.resourcePath : content,

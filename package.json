@@ -1,6 +1,6 @@
 {
   "name": "nd-file-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "增强 file-loader 功能，对文件路径进行编码",
   "main": "index.js",
   "scripts": {
