@@ -29,7 +29,8 @@ module.exports = function(content) {
 
 	var url = loaderUtils.interpolateName(this, config.name, {
 		context: config.context || this.options.context,
-		content: config.usePath ? this.resourcePath : content,
+		// 使用项目里的相对路径
+		content: config.usePath ? path.relative(process.cwd(), this.resourcePath) : content,
 		regExp: config.regExp
 	});
 	// console.log(url);
